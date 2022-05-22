@@ -1,0 +1,29 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 600px 100px;
+}
+
+.top-box {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  background-color: yellow;
+}
+
+.left-box {
+  grid-column: 1;
+  grid-row: 2;
+  background-color: red;
+}
+
+.right-box {
+  grid-column: 2 / 4;
+  grid-row: 2;
+  background-color: grey;
+}
+
+.bottom-box {
+  grid-column: 1 / 4;
+  grid-row: 3;
+  background-color: black;
+}

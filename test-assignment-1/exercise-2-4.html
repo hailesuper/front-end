@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+  <style media="screen">
+    .form-field {
+      margin-bottom: 10px
+    }
+  </style>
+</head>
+
+<body>
+  <form class="" action="index.html" method="post">
+    <h1>Register</h1>
+    <p>Please <strong><em>fill in this form</em></strong> to create an account</p>
+    <div class="form-field">
+      <label for="full-name">Fullname <span class="red-star">*</span></label><br>
+      <input id="full-name" type="text" name="full-name" required placeholder="Input your full name"><br>
+    </div>
+    <div class="form-field">
+      <label for="username">Username <span class="red-star">*</span></label><br>
+      <input id="username" type="text" name="username" required placeholder="Input your username"><br>
+    </div>
+    <div class="form-field">
+      <label for="password">Password<span class="red-star">*</span></label><br>
+      <input id="password" type="password" name="password" required placeholder="Input your password">
+    </div>
+    <div class="form-field">
+      <label for="email">Email <span class="red-star">*</span></label><br>
+      <input type="email" name="email" value="" required placeholder="Input your email">
+    </div>
+    <div class="form-field">
+      <label for="telephone-number">Telephone number <span class="red-star">*</span></label><br>
+      <input type="tel" name="telephone-number" value="" required placeholder="Input your phone number"
+      pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">
+      <small>Format: 123-4567-8999</small>
+
+    </div>
+    <div class="form-field">
+      <legend>Input Object</legend>
+      <!-- <label for="input-object">Input Object</label><br> -->
+      <div class="radio-option">
+        <input id="student" type="radio" name="input-object" value="student" checked>
+        <label for="student">Student</label>
+      </div>
+      <div class="radio-option">
+        <input id="teacher" type="radio" name="input-object" value="teacher">
+        <label for="teacher">Teacher</label>
+      </div>
+
+    </div>
+    <div class="form-field">
+      <label for="favorite">Favorite</label><br>
+      <input type="checkbox" id="badminton" name="badminton" value="badminton">
+      <label for="badminton">Badminton</label>
+      <input type="checkbox" id="volleyball" name="volleyball" value="volleyball">
+      <label for="volleyball">Volleyball</label>
+      <input type="checkbox" id="football" name="football" value="football">
+      <label for="football">Football</label>
+    </div>
+    <div class="form-field">
+      <label for="myAddressBrowser">Address <span class="red-star">*</span></label><br>
+      <input type="text" list="addressBrowser" id="myAddressBrowser" name="myAddressBrowser" value="">
+      <datalist id="addressBrowser">
+        <option value="Vũng Tàu">Vũng Tàu</option>
+        <option value="Hà Nội">Hà Nội</option>
+        <option value="Sài Gòn">Sài Gòn</option>
+      </datalist>
+    </div>
+    <div class="form-field">
+      <label for="birthday">Birthday <span class="red-star">*</span></label><br>
+      <input type="date" id="birthday" name="birthday" value="">
+    </div>
+    <div class="form-field">
+      <label for="your-picture">Your picture <span class="red-star">*</span></label><br>
+      <input type="file" id="your-picture" name="your-picture" value=""
+      accept=".jpeg,.png,.jpg">
+    </div>
+    <div class="form-submit">
+      <input type="submit" name="submit" value="Đăng ký">
+    </div>
+
+  </form>
+</body>
+
+</html>

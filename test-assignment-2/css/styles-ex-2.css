@@ -1,0 +1,111 @@
+
+h1,
+.centered {
+  text-align: center;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+.poem {
+  background-color: lightyellow;
+  margin: 10px;
+}
+
+.first-paragraph {
+  color: blue;
+}
+
+h4 {
+  text-decoration-color: purple;
+  background-color: pink;
+}
+
+.second-paragraph {
+  color: red;
+}
+
+.third-paragraph {
+  color: green;
+}
+
+.bai-01, 
+.bai-04 {
+  margin: auto;
+  width: 70%;
+}
+
+.bai-02 {margin: auto 20%;}
+.bai-02 h1,
+
+.bai-03 {width: 70%; margin: auto;}
+.bai-03 h1 {
+  color: green;
+}
+
+.bai-03 p {
+  font-style: italic;
+}
+.red-text {
+  color: red;
+}
+.bai-03 strong,
+.bai-03 span {
+  font-style: normal;
+}
+pre {background-color: lightgray;}
+
+/* bai 04 */
+.bai-04 h1 {color: palevioletred;}
+.ads-body {margin: auto;}
+.ads-body ol > li {background: pink;}
+/* .ads-body {display: flex;}
+.left-ads-body {flex: 1; align-self: end;}
+.left-ads-body img {max-height: 200px; right: 0;}
+.right-ads-body {flex: 3;} */
+.bai-04 {width: 70%; margin: auto}
+.left-ads-body {display: inline-block;}
+.left-ads-body img {max-height: 200px; right: 0;}
+.right-ads-body {display: inline-block;}
+footer {text-align: center;}
+
+/* bai 05 */
+.bai-05 {background-color: lightgrey; padding: 10%; width: 70%; margin: auto}
+.bai-05 h1 {text-align: center; color: brown;}
+.bai-05 table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+.bai-05 thead th:nth-child(1) {
+  width: 20%;
+
+}
+
+.bai-05thead th:nth-child(2) {
+  width: 80%;
+
+}
+.bai-05 thead {
+  color: white;
+  background-color: brown;
+
+}
+
+.bai-05 tbody tr:nth-child(odd) {
+  background-color: white;
+
+}
+
+.bai-05 tbody tr:nth-child(even) {
+  background-color: grey;
+}
+
+.bai-05 th, td {
+  padding: 20px;
+  border: 3px solid purple;
+
+}
+
+.bai-05 

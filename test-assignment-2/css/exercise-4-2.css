@@ -1,0 +1,39 @@
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.article-preview {
+  width: 30%;
+  padding: 20px;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+}
+
+.button-block {
+  text-align: right;
+}
+button {
+  background-color: blue;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  /* text-align: right; */
+}
+
+a:link {
+  color: white;
+}
+
+a:hover {
+  color: yellow;
+}
+
+a:visited {
+  color: grey;
+};

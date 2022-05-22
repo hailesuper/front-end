@@ -1,0 +1,34 @@
+/* CSS for Exercise 1 */
+p {
+  border: solid 1px green;
+}
+#question1-p-element {
+  margin: 70px 0px 70px 70px;
+  width: 70%;
+}
+
+#question12 {
+  padding: 70px 0 70px 70px;
+}
+
+.fit-content {
+  width: fit-content;
+}
+
+.container {
+  border: 1px solid red;
+  margin-bottom: 10px;
+}
+#vertically-centered {
+  margin: 70px 0;
+}
+
+.margin-no-padding {
+  margin: 70px;
+  border-color: red;
+}
+
+.padding-no-margin {
+  padding: 70px;
+  border-color: red;
+}

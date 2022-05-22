@@ -1,0 +1,41 @@
+header {
+  background-color: red;
+  height: 110px;
+}
+
+nav {
+  background-color: green;
+  height: 40px;
+}
+
+main {
+  display: flex;
+}
+
+.left-main-body {
+  flex: 3;
+}
+
+.right-main-body {
+  flex: 1;
+}
+
+section {
+  background-color: blue;
+  height: 200px;
+}
+
+article {
+  background-color: black;
+  height: 200px;
+}
+
+aside {
+  background-color: grey;
+  height: 400px;
+}
+
+footer {
+  background: orange;
+  height: 110px;
+}
