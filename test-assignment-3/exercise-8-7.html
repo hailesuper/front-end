@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Employee Management
+    </title>
+    <link rel="stylesheet" href="css/exercise-8-7.css">
+    <script src="scripts/exercise-8-7.js" defer>
+    </script>
+  </head>
+  <body>
+    <h1>Employee Management System
+    </h1>
+    <!--Source: https://bbbootstrap.com/snippets/bootstrap-5-sidebar-menu-toggle-button-34132202-->
+    <div class="l-navbar" id="nav-bar">
+      <nav class="nav">
+        <div>
+          <a href="#" class="nav_logo">
+            <i class='bx bx-layer nav_logo-icon'>
+            </i>
+            <span class="nav_logo-name">BBBootstrap
+            </span>
+          </a>
+          <div class="nav_list">
+            <a href="#" class="nav_link active">
+              <i class='bx bx-grid-alt nav_icon'>
+              </i>
+              <span class="nav_name">C
+              </span>
+            </a>
+            <a href="#" class="nav_link">
+              <i class='bx bx-user nav_icon'>
+              </i>
+              <span
+                    class="nav_name">R
+              </span>
+            </a>
+            <a href="#" class="nav_link">
+              <i class='bx bx-message-square-detail nav_icon'>
+              </i>
+              <span class="nav_name">U
+              </span>
+            </a>
+            <a href="#" class="nav_link">
+              <i class='bx bx-bookmark nav_icon'>
+              </i>
+              <span class="nav_name">D
+              </span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--Container Main start-->
+    <div class="bg-light">
+      <h4>Danh sách nhân viên
+      </h4>
+      <table class="employeeListTable">
+        <thead>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Email</th>
+        <th>Work</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <!--Container Main end-->
+
+    <div class="bg-light" id="addEmployee">
+      <h4> Thêm nhân viên
+      </h4>
+      <form action="">
+        <div class="formField">
+          <label for="employeeName">Họ và tên: </label>
+          <input type="text" id="employeeName">
+        </div>
+        <div class="formField">
+          <label for="employeeAge">Tuổi:</label>
+          <input type="number" name="employeeAge" id="employeeAge">
+        </div>
+        <div class="formField">
+          <label for="employeeEmail">Email: </label>
+          <input type="email" name="employeeEmail" id="employeeEmail">
+        </div>
+        <div class="formField">
+          <label for="employeeWork">Work:</label>
+          <select name="employeeWork" id="employeeWork">
+            <option value="fullTime">Full-time</option>
+            <option value="partTime">Part-time</option>
+            <option value="unemployed">Unemployed</option>
+            <option value="others">Others</option>
+          </select>
+        </div>
+        <div class="formField">
+          <input type="button" value="Thêm" id="addEmployeeButton">
+        </div>
+      </form>
+
+    </div>
+
+    <div class="bg-light" >
+      <h4> Xóa nhân viên
+      </h4>
+
+    </div>
+
+    <div class="bg-light" >
+      <h4> Sửa thông tin nhân viên
+      </h4>
+
+    </div>
+
+  </body>
+</html>

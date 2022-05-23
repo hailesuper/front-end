@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+}
+
+.calForm {
+    margin: auto;
+}
+table {
+    border-width: 2px;
+    border-style: groove;
+}
+td {
+    margin: 10px;
+    border-width: 2px;
+    border-style: inset;
+}
+
+.calButton {text-align: center;}
+.calButton input {margin: 5px;}

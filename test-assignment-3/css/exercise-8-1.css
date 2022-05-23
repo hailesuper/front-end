@@ -1,0 +1,7 @@
+div {margin: 10px}
+.formField input[id=firstNumber] {margin-bottom: 20px}
+.resultArea,
+.calculationButtons
+{display: inline-block;}
+
+#result {width: 70px; text-align: right;}
