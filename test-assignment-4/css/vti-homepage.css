@@ -1,0 +1,65 @@
+/*Header*/
+header {
+    display: flex;
+    height: 2rem;
+    background-color: rgb(44,80,149);
+}
+
+.navbar-logo {
+    margin: 0 2rem;
+    text-align: center;
+}
+.navbar-logo img {
+    /*width: 10%;*/
+
+    width: 10rem;
+    margin: 0;
+    padding: 0;
+}
+@media (min-width: 992px)
+{
+    .navbar-expand-lg {
+        justify-content: space-between;
+    }
+    .navbar-collapse {
+        flex-grow: 0;
+    }
+    .navbar > .container-fluid {
+        justify-content: center;
+    }
+}
+.navbar-nav {
+    justify-content: space-between;
+}
+.company-contact-info {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-contact-info a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+
+}
+.home-icon {
+    height: 2rem;
+    padding: 0px 40px;
+    background-color: orange;
+}
+
+.home-icon-button {
+    flex: 1;
+    text-align: center;
+    width: 5rem;
+}
+
+/*Slider*/
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
