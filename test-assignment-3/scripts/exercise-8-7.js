@@ -1,17 +1,19 @@
 let employees = [];
+let employeeID = 0;
 function Employee(name, age, email, work) {
-    this.id = employees.length + 1;
+    this.id = ++employeeID;
     this.name = name;
     this.age = age;
     this.email = email;
     this.work = work;
 }
 
-let firstEmployee = new Employee("Hai", 27, "hai@gmail.com", "Full-time");
+let firstEmployee = new Employee("Hai", 18, "hai@gmail.com", "Full-time");
 employees.push(firstEmployee);
 
-let secondEmployee = new Employee("Hai", 28, "hai@gmail.com", "Full-time");
+let secondEmployee = new Employee("Hai", 19, "hai@gmail.com", "Full-time");
 employees.push(secondEmployee);
+
 // READ
 let employeeListTableBody = document.querySelector(".employeeListTable tbody")
 showEmployee();
@@ -25,21 +27,17 @@ addEmployeeButton.addEventListener("click", () => {
     let employeeWork = document.querySelector("#employeeWork").value;
     let newEmployee = new Employee(employeeName, employeeAge, employeeEmail, employeeWork);
     employees.push(newEmployee);
-
-
     showEmployee();
-    // alert(JSON.stringify(employees[employees.length - 1], null, 4));
 })
 
 // DELETE
 let deleteButtons = document.querySelectorAll(".deleteEmployeeButton");
 for (let deleteButton of deleteButtons) {
     deleteButton.addEventListener("click", () => {
-        let employeeID = deleteButton.getAttribute("deleteID");
-        employees.splice(employeeID - 1,1);
+        let employeeID = Number(deleteButton.getAttribute("employeeID"));
+        deleteEmployeeByID(employeeID);
         showEmployee();
-    })
-
+    });
 }
 
 
@@ -57,7 +55,7 @@ function showEmployee() {
         let deleteButton = document.createElement("button");
         deleteButton.textContent = "Xóa";
         deleteCell.setAttribute("class", "deleteEmployeeButton");
-        deleteCell.setAttribute("deleteID", employee.id);
+        deleteCell.setAttribute("employeeID", employee.id);
         deleteCell.appendChild(deleteButton);
         tdName.textContent = employee.name;
         tdAge.textContent = employee.age;
@@ -69,6 +67,13 @@ function showEmployee() {
         employeeListTableBody.appendChild(tdEmail);
         employeeListTableBody.appendChild(tdWork);
         employeeListTableBody.appendChild(deleteCell);
+    }
+}
+
+function deleteEmployeeByID(employeeID) {
+    for (let i=0; i<(employees.length - 1); i++) {
+        if (employeeID === employees[i].id)
+            employees.splice(i,1);
     }
 }
 
