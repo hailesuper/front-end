@@ -1,0 +1,17 @@
+p {
+    background-color: grey;
+    color: white;
+    margin: 0;
+    border: 1px white solid;
+    text-align: center;
+}
+
+.in-withdrawal {
+    height: 200px;
+    background-color: grey;
+    display: none;
+}
+
+.in-withdrawal p {
+    border: 0;
+}

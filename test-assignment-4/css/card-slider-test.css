@@ -1,0 +1,42 @@
+.card-sliders {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.card-sliders .container {
+    width: 75%;
+}
+.card-sliders .card .image {
+    height: 200px;
+    width: 140px;
+    padding: 1px;
+    background: rgb(44,80,149);
+}
+
+.card-sliders .card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+
+.card {
+    background: white;
+}
+
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.card .card-content .description h4 {
+    color: rgb(44,80,149);
+    text-transform: uppercase;
+    font-weight: bold;
+}

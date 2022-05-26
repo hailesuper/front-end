@@ -14,7 +14,7 @@
 
         td {
             border: thin inset grey;
-            margin: 1;
+            margin: 1px;
         }
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -24,7 +24,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Assignment 3</a>
+        <a class="navbar-brand" href="#">Assignment 4</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -32,13 +32,43 @@
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Exercise 8
+                        Exercise 1
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                        <li><a class="dropdown-item" href="exercise-8-1.html">Question 1</a></li>
-                        <li><a class="dropdown-item" href="exercise-8-2.html">Question 2</a></li>
-                        <li><a class="dropdown-item" href="exercise-8-7.html">Question 7</a></li>
+                        <li><a class="dropdown-item" href="exercise-1-1.html">Question 1</a></li>
+                        <li><a class="dropdown-item" href="exercise-1-2.html">Question 2</a></li>
+                        <li><a class="dropdown-item" href="exercise-1-3.html">Question 3</a></li>
+                        <li><a class="dropdown-item" href="exercise-1-4.html">Question 4</a></li>
+                        <li><a class="dropdown-item" href="exercise-1-5.html">Question 5</a></li>
+                        <li><a class="dropdown-item" href="exercise-1-6.html">Question 6</a></li>
+                        <li><a class="dropdown-item" href="exercise-1-7.html">Question 7</a></li>
+
                     </ul>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Exercise 2
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li><a class="dropdown-item" href="exercise-2-1.html">Question 1</a></li>
+                        <li><a class="dropdown-item" href="exercise-2-2.html">Question 2</a></li>
+                        <li><a class="dropdown-item" href="exercise-2-3.html">Question 3</a></li>
+                        <li><a class="dropdown-item" href="exercise-2-4.html">Question 4</a></li>
+                        <li><a class="dropdown-item" href="exercise-2-5.html">Question 5</a></li>
+                        <li><a class="dropdown-item" href="exercise-2-6.html">Question 6</a></li>
+                        <li><a class="dropdown-item" href="exercise-2-7.html">Question 7</a></li>
+                        <li><a class="dropdown-item" href="exercise-2-7.html">Question 8</a></li>
+                        <li><a class="dropdown-item" href="exercise-2-7.html">Question 9</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="vti-homepage.html" target="_blank">
+                        VTI Homepage
+                    </a>
                 </li>
             </ul>
         </div>
@@ -46,10 +76,17 @@
 </nav>
 
 <div class="body-image">
-    <div>
+    <div class="note" style="text-align: left; margin-left: 20%">
+        <h2>Questions:</h2>
         <p>1.7 lúc select sai làm chưa được, ko biết cách debug</p>
         <p>homepage: navbar-logo CSS khác biệt % và rem...</p>
-
+        <p>2.1 trong code css lúc chưa select được object (dùng # thay vì id), <mark>cách debug</mark></p>
+        <p>2.2 Gộp 2 line sau thành 1 trong <a href="scripts/exercise-2-2.js">ex-2-2.js</a></p>
+        <pre>
+            $("iframe").slideDown();
+            $("iframe")[0].src += "?autoplay=1";
+        </pre>
+        <p>2.3 video ko tự play lúc mở dù đã set vào src ?autoplay=1</p>
     </div>
     <img src="https://webtan.impress.co.jp/sites/default/files/images/seomoz/2017/seomoz20170911-0925_fig01.gif" alt="">
 </div>

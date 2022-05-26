@@ -3,110 +3,327 @@
 <head>
     <meta charset="UTF-8">
     <title>Học là Hiểu | Sống tự do với IT</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/vti-homepage.css">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/6e6302f88b.js" crossorigin="anonymous"></script>
-    <script src="scripts/vti-homepage.js"></script>
+
+
+    <script src="scripts/vti-homepage.js" defer></script>
+
+    <!-- Link Swiper's CSS -->
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts/card-slider-test.js" defer></script>
+
 </head>
 <body>
-<!--Header-->
-<header>
-    <div class="company-contact-info">
-        <a href="tel:+81111222333">+81 111 222 333</a>
-        <a href="mailto: info@tudovoiit.edu">info@tudovoiit.edu</a>
-    </div>
-    <div class="home-icon-button">
-        <object class="home-icon" data="images/house-user-solid.svg" type="image/svg+xml"></object>
-    </div>
-</header>
-
-<!--Menu-->
-<nav>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-logo" href="#"><img src="images/company-logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Giới thiệu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Lý do lựa chọn</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Khung chương trình</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Đội ngũ Mentor</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Cảm nhận của học viên</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Hoạt động của lớp học</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Cảm nhận của học viên</a>
-                    </li>
-                    <li class="nav-item">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Liên hệ</a>
-<!--                    </li>-->
-<!--                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
-<!--                    </li>-->
-                </ul>
-            </div>
+<div class="sticky-header">
+    <!--Header-->
+    <header class="header-info">
+        <div class="company-contact-info">
+            <a href="tel:+81111222333">+81 111 222 333</a>
+            <a href="mailto: info@tudovoiit.edu">info@tudovoiit.edu</a>
         </div>
+        <div class="home-icon-button">
+            <a href="vti-homepage.html">
+                <object class="home-icon" data="images/house-user-solid.svg" type="image/svg+xml"></object>
+            </a>
+        </div>
+    </header>
+
+    <!--Menu-->
+    <nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-logo" href="vti-homepage.html"><img src="images/company-logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#get-after-the-course">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#company-features">Lý do lựa chọn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#course-features">Khung chương trình</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mentors-list">Đội ngũ Mentor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cảm nhận của học viên</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hoạt động của lớp học</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cảm nhận của học viên</a>
+                        </li>
+                        <li class="nav-item">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Liên hệ</a>
+                            <!--                    </li>-->
+                            <!--                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
+                            <!--                    </li>-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </nav>
-</nav>
+</div>
+
 
 <main>
-<!--    Slider-->
-<!--    Source: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_dots2-->
+    <!--    Slider-->
+    <!--    Source: https://getbootstrap.com/docs/4.0/components/carousel/-->
     <section class="sliders">
-        <div class="w3-container">
-            <h2>Slideshow Indicators</h2>
-            <p>An example of using buttons to indicate how many slides there are in the slideshow, and which slide the user is currently viewing.</p>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/sliders/slider-01.jpeg" class="d-block w-100" alt="...">
+                    <div class="java-course-info java">
+                        <h2>KHÓA ĐÀO TẠO</h2>
+                        <h3>FULL-STACK <br>JAVA WEB</h3>
+                        <a href="">
+                            <button>Đăng ký ngay</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/sliders/slider-02.jpeg" class="d-block w-100" alt="...">
+                    <div class="java-course-info python">
+
+                        <h2>KHÓA ĐÀO TẠO</h2>
+                        <h3>FULL-STACK <br>PYTHON WEB</h3>
+                        <a href="">
+                            <button>Đăng ký ngay</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/sliders/slider-03.jpeg" class="d-block w-100" alt="...">
+                    <div class="java-course-info data">
+
+                        <h2>KHÓA ĐÀO TẠO</h2>
+                        <h3>DATA ANALYTICS <br>MACHINE LEARNING</h3>
+                        <a href="">
+                            <button>Đăng ký ngay</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+    </section>
+    <!--    Course features-->
+    <section class="course-features" id="course-features">
+        <div class="demonstration-video">
+            <iframe src="https://www.youtube.com/embed/iXGtx-hroKE" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </div>
+        <div class="get-after-the-course" id="get-after-the-course">
+            <h2>HOÀN THÀNH KHÓA ĐÀO TẠO <span class="course-name"><strong>JAVA WEB</strong></span> BẠN SẼ</h2>
+            <ul>
+                <li>Nắm được logic khi thiết kế webside từ đầu đến cuối</li>
+                <li>Làm quen với các ngôn ngữ HTML, CSS, Javascript và chuyên sâu Java</li>
+                <li>Cập nhập với các công nghệ hiện đại trong những năm gần đây</li>
+                <li>Tư duy logic phát triển để theo kịp xu hướng</li>
+                <li>Trang bị khả năng tự phát triển và học đường dài.</li>
+            </ul>
+        </div>
+    </section>
 
+    <!--    Company features-->
+    <section class="company-features" id="company-features">
+        <h2>TẠI SAO LỰA CHỌN CHÚNG TÔI</h2>
+        <!--    Source: https://www.youtube.com/watch?v=pRTHM-pVS9w&ab_channel=OnlineTutorials-->
 
-        <div class="w3-content w3-display-container" style="max-width:800px">
-            <img class="mySlides" src="images/sliders/slider-01.png" style="width:100%">
-            <img class="mySlides" src="img_snow_wide.jpg" style="width:100%">
-            <img class="mySlides" src="img_mountains_wide.jpg" style="width:100%">
-            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-                <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-                <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        <div class="container">
+            <div class="hexagon">
+                <div class="shape">
+                    <div class="content">
+                        <p>Chương trình đào tạo mang tính <strong>KHAI PHÓNG</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="hexagon">
+                <div class="shape">
+                    <div class="content">
+                        <p>Kết hợp sử dụng tài liệu <strong>CHÍNH THỐNG</strong> và <strong>MÃ NGUỒN MỞ</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="hexagon">
+                <div class="shape">
+                    <div class="content">
+                        <p>Trang bị khả năng <strong>TƯ DUY ĐỘC LẬP</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="hexagon">
+                <div class="shape">
+                    <div class="content">
+                        <p>Có thể đáp ứng với bất kỳ môi trường <strong>QUỐC TẾ</strong> nào</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hexagon">
+                <div class="shape">
+                    <div class="content">
+                        <p>Trang bị khả năng <strong>TỰ TIN</strong> trong làm việc nhóm.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-<!--    Course features-->
-    <section class="course-features">
+
+<!--    Call to Action Button-->
+    <div class="call-to-action">
+        <a href=""><button>Đăng ký ngay</button>
+        </a>
+    </div>
+    <!--Target customers-->
+    <section class="target-customer" id="target-customer">
+        <h2>AI CÓ THỂ THEO HỌC KHÓA LẬP TRÌNH CỦA itGETMAD<sup>byHAI</sup></h2>
+        <div class="grid-target-customers">
+            <div class="target-customers-container">
+                <img src="images/target-customers/01-bored.png" alt="">
+                <p>Bạn là sinh viên ngành IT không có động lực?</p>
+                <img src="images/target-customers/02-passionate.png" alt="">
+                <p>Bạn không thuộc ngành IT nhưng đam mê</p>
+                <img src="images/target-customers/03-affection.png" alt="">
+                <p>Bạn muốn tận hưởng cảm giác hạnh phúc khi phát triển sản phẩm</p>
+                <img src="images/target-customers/04-shy.png" alt="">
+                <p>Bạn cảm thấy thiếu tự tin hòa nhập môi trường IT quốc tế</p>
+                <img src="images/target-customers/05-help.png" alt="">
+                <p>Bạn muốn được truyền lửa bởi giảng viên đam mê</p>
+            </div>
+        </div>
 
     </section>
+    <!--    Call to Action Button-->
+    <div class="call-to-action">
+        <a href=""><button>Đăng ký ngay</button>
+        </a>
+    </div>
+    <!--    Mentors List-->
+    <!--    Source: https://youtu.be/BKKcGb80MOs-->
+    <!--    Source: https://swiperjs.com/demos#infinite-loop-->
+    <section class="mentors-list" id="mentors-list">
+        <h2>ĐỘI NGŨ NGƯỜI TRUYỀN LỬA</h2>
+        <div class="card-sliders">
+            <div class="swiper mySwiper container">
+                <div class="swiper-wrapper content">
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="images/mentors/mentor-demo.jpg" alt="">
+                            </div>
 
-<!--    Company features-->
-    <section class="company-features">
+                            <div class="description">
+                                <h4>Lê Văn Hải</h4>
+                                <p>Java OCP Certified <br>
+                                    Computer Science Major</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="images/mentors/mentor-demo.jpg" alt="">
+                            </div>
 
-    </section>
+                            <div class="description">
+                                <h4>Shin Miyazawa</h4>
+                                <p>Software Engineer <br>
+                                    Google Japan Inc</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="images/mentors/mentor-demo.jpg" alt="">
+                            </div>
 
-<!--    Mentors List-->
-    <section class="mentors-list">
+                            <div class="description">
+                                <h4>Ariel Kern</h4>
+                                <p>Senior Product Manager <br>
+                                    Credit Suisse Group</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="images/mentors/mentor-demo.jpg" alt="">
+                            </div>
 
+                            <div class="description">
+                                <h4>Lê Văn Hải 2</h4>
+                                <p>Java OCP Certified <br>
+                                    Computer Science Major</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="images/mentors/mentor-demo.jpg" alt="">
+                            </div>
+
+                            <div class="description">
+                                <h4>Shin Miyazawa 2</h4>
+                                <p>Software Engineer <br>
+                                    Google Japan Inc</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="images/mentors/mentor-demo.jpg" alt="">
+                            </div>
+
+                            <div class="description">
+                                <h4>Ariel Kern 2</h4>
+                                <p>Senior Product Manager <br>
+                                    Credit Suisse Group</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
     </section>
 </main>
 <!--Slider-->
-
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 </html>

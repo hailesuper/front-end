@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/card-slider-test.css">
+    <!-- Link Swiper's CSS -->
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://kit.fontawesome.com/6e6302f88b.js" crossorigin="anonymous"></script>
+    <script src="scripts/card-slider-test.js" defer></script>
+</head>
+<body>
+<section class="card-sliders">
+    <div class="swiper mySwiper container">
+        <div class="swiper-wrapper content">
+            <div class="swiper-slide card">
+                <div class="card-content">
+                    <div class="image">
+                        <img src="images/mentors/mentor-demo.jpg" alt="">
+                    </div>
+
+                    <div class="description">
+                        <h4>Lê Văn Hải</h4>
+                        <p>Java OCP Certified <br>
+                            Computer Science Major</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide card">
+                <div class="card-content">
+                    <div class="image">
+                        <img src="images/mentors/mentor-demo.jpg" alt="">
+                    </div>
+
+                    <div class="description">
+                        <h4>Lê Văn Hải</h4>
+                        <p>Java OCP Certified <br>
+                            Computer Science Major</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide card">
+                <div class="card-content">
+                    <div class="image">
+                        <img src="images/mentors/mentor-demo.jpg" alt="">
+                    </div>
+
+                    <div class="description">
+                        <h4>Lê Văn Hải</h4>
+                        <p>Java OCP Certified <br>
+                            Computer Science Major</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide card">
+                <div class="card-content">
+                    <div class="image">
+                        <img src="images/mentors/mentor-demo.jpg" alt="">
+                    </div>
+
+                    <div class="description">
+                        <h4>Lê Văn Hải</h4>
+                        <p>Java OCP Certified <br>
+                            Computer Science Major</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide card">
+                <div class="card-content">
+                    <div class="image">
+                        <img src="images/mentors/mentor-demo.jpg" alt="">
+                    </div>
+
+                    <div class="description">
+                        <h4>Lê Văn Hải</h4>
+                        <p>Java OCP Certified <br>
+                            Computer Science Major</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide card">
+                <div class="card-content">
+                    <div class="image">
+                        <img src="images/mentors/mentor-demo.jpg" alt="">
+                    </div>
+
+                    <div class="description">
+                        <h4>Lê Văn Hải</h4>
+                        <p>Java OCP Certified <br>
+                            Computer Science Major</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+</section>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+</body>
+</html>
